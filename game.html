@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shooting Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            background-color: #87CEEB;
+        }
+
+        #fullscreen-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <button id="fullscreen-button">Press F11 To full screen</button>
+    <div id="score">Score: 0</div>
+    <audio id="shoot-sound">
+        <source src="shotgun-firing-4-6746.mp3" type="audio/mp3">
+
+    </audio>
+    <audio id="gunshot-sound">
+        <source src="gunshot.mp3" type="audio/mpeg">
+   
+    </audio>
+    <script src="game.js"></script>
+</body>
+</html>
